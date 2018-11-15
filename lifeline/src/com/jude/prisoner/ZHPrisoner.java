@@ -9,7 +9,7 @@ public  class ZHPrisoner implements Prisoner {
     private int totalCount;
     private int totalPerson;
     public String getName(){
-        return "ZH12138";
+            return "ZhuHong2017214906";
     }
     public void begin(Manager manager, int totalPerson, int totalCount)
     {
@@ -22,6 +22,8 @@ public  class ZHPrisoner implements Prisoner {
         return ((totalCount - last) / (index + 1) + totalCount / totalPerson) / 2;
     };
     public void result(boolean survived){
-
+            if(survived == true){
+                System.out.println("我还活着");
+            }
     };
 }
