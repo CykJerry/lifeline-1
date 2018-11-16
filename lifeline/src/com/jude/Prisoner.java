@@ -1,5 +1,10 @@
 package com.jude;
 
+ import com.jude.Manager;
+ import com.jude.Prisoner;
+
+ import java.security.PublicKey;
+
 /**
  * Created by Mr.Jude on 2015/10/28.
  * 这是个有趣的实验，你们都是囚犯，给你们N颗豆子，你们随便拿。
@@ -11,12 +16,22 @@ package com.jude;
 
 
 public interface Prisoner {
+    int SumNumber;
+    int SumPerson;
+    
     //返回你的名字＋学号
     String getName();
+     return "王岌2018210642"
+         
     //当游戏开始，告诉你囚犯总人数，与豆子总数
-    void begin(Manager manager,int totalPerson,int totalCount);
+    void begin(Manager manager,int SumNumber,int SumPerson);
+     this.SumNumber = SumNumber;
+     this.SumPerson = SumPerson;
+    
     //轮到你取豆子
     int take(int index, int last);
+     return (SumNumber - last)/(index + 1);
+    
     //最后告诉你活着还是死了
     void result(boolean survived);
 }
