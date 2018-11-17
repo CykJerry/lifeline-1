@@ -1,0 +1,24 @@
+/**
+ * Author
+ */
+public class MikePrisoner implements Prisoner {
+    private int totalCount;
+    private int totalPerson;
+     @Override
+    public String getName() {
+        return "何然2017215152";
+    }
+     @Override
+    public void begin(Manager manager, int totalPerson, int totalCount) {
+        this.totalCount = totalCount;
+        this.totalPerson = totalPerson;
+    }
+     @Override
+    public int take(int index, int last) {
+        
+        return ((totalCount-index+1)*2+(totalPerson+last)*2)/3;
+    }
+     @Override
+    public void result(boolean survived) {
+     }
+ }
