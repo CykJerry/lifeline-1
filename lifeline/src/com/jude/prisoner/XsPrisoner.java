@@ -20,7 +20,7 @@ public class XsPrisoner implements Prisoner {
 
     @Override
     public int take(int index, int last) {
-        return ((totalCount - last) / (index + 1) + last / totalPerson - 1);
+        return ((totalCount - last) / (index + 1) + last / totalPerson);
     }
 
     @Override
