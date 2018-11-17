@@ -29,5 +29,5 @@ public class GitYiMPrisoner implements Prisoner {private int totalCount;
     public void result(boolean survived) {
         System.out.println("惊了！我还活着");
     }
-
+ 
 }
