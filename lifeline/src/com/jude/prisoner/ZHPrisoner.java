@@ -18,7 +18,7 @@ public  class ZHPrisoner implements Prisoner {
     };
 
     public int take(int index, int last){
-            if(index > totalPerson){
+            if(index > totalPerson / 2){
                 return ((totalCount - last + 1) / (index + 1) + (totalCount + 1) / totalPerson) / 2;
             }
             else
