@@ -8,7 +8,7 @@ public class GitYiMPrisoner implements Prisoner {private int totalCount;
 
     @Override
     public String getName() {
-        return "GitYiM2017212668";
+        return "易靖涛2017212668";
     }
 
     @Override
