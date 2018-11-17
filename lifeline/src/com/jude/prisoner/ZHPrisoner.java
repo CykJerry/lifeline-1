@@ -18,8 +18,12 @@ public  class ZHPrisoner implements Prisoner {
     };
 
     public int take(int index, int last){
-
-        return ((totalCount - last + 1) / (index + 1) + (totalCount + 1) / totalPerson) / 2;
+            if(index > totalPerson){
+                return ((totalCount - last + 1) / (index + 1) + (totalCount + 1) / totalPerson) / 2;
+            }
+            else
+                return (totalCount / index + last + 1);
+ 
     };
     public void result(boolean survived){
     };
