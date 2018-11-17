@@ -19,13 +19,8 @@ public  class ZHPrisoner implements Prisoner {
 
     public int take(int index, int last){
 
-        return ((totalCount - last) / (index + 1) + totalCount / totalPerson) / 2;
+        return ((totalCount - last + 1) / (index + 1) + (totalCount + 1) / totalPerson) / 2;
     };
     public void result(boolean survived){
-            if(survived == true){
-                System.out.println("我还活着");
-            }
-            else
-                System.out.println("啊！");
     };
 }
