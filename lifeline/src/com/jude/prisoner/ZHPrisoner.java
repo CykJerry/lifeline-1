@@ -9,7 +9,7 @@ public  class ZHPrisoner implements Prisoner {
     private int totalCount;
     private int totalPerson;
     public String getName(){
-        
+        return "朱鸿2017214906";
     }
     public void begin(Manager manager, int totalPerson, int totalCount)
     {
