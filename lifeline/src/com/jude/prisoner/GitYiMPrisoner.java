@@ -3,8 +3,7 @@ package com.jude.prisoner;
 import com.jude.Manager;
 import com.jude.Prisoner;
 
-public class GitYiMPrisoner implements Prisoner {
-    private int totalCount;
+public class GitYiMPrisoner implements Prisoner {private int totalCount;
     private int totalPerson;
 
     @Override
@@ -20,10 +19,10 @@ public class GitYiMPrisoner implements Prisoner {
 
     @Override
     public int take(int index, int last) {
-        if (index == 0)
-            return totalCount / totalPerson;
+        if(index==0)
+            return totalCount/totalPerson;
         else
-            return (totalCount - last) / index;
+            return (totalCount-last)/(index);
     }
 
     @Override
