@@ -17,7 +17,6 @@ public class JingChaoPrisoner implements Prisoner {
     }
 
     public int take(int index, int last) {
-        //经过我吴京超缜密的计算，我算出我拿这个数最能活
         if (index <= totalCount) {
             return ((totalCount - last) / (index + 1) + totalCount / totalPerson) / 2;
         } else {
