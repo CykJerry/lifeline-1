@@ -3,7 +3,8 @@ package com.jude.prisoner;
 import com.jude.Manager;
 import com.jude.Prisoner;
 
-public class GitYiMPrisoner implements Prisoner {private int totalCount;
+public class GitYiMPrisoner implements Prisoner {
+    private int totalCount;
     private int totalPerson;
 
     @Override
@@ -19,15 +20,19 @@ public class GitYiMPrisoner implements Prisoner {private int totalCount;
 
     @Override
     public int take(int index, int last) {
-        if(index==0)
-            return totalCount/totalPerson;
+        if (index == 0)
+            return totalCount / totalPerson;
         else
-            return (totalCount-last)/(index);
+            return (totalCount - last) / (index);
     }
 
     @Override
     public void result(boolean survived) {
-        System.out.println("惊了！我还活着");
+        if (survived) {
+            System.out.println("惊了！我还活着");
+        } else {
+            System.out.println("我死翘翘了！！");
+        }
     }
- 
+
 }
