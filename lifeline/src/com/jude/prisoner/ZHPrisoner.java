@@ -25,5 +25,7 @@ public  class ZHPrisoner implements Prisoner {
             if(survived == true){
                 System.out.println("我还活着");
             }
+            else
+                System.out.println("啊！");
     };
 }
