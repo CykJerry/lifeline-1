@@ -1,6 +1,9 @@
 /**
  * Author
  */
+ package com.jude.prisoner;
+ import com.jude.manager;
+import com.jude.Prisoner;
 public class MikePrisoner implements Prisoner {
     private int totalCount;
     private int totalPerson;
